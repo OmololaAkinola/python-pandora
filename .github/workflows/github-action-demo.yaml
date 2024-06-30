@@ -1,0 +1,17 @@
+name: slam dunk deployment
+on: [push]
+jobs:
+ slam-dunk:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Say my code
+       run: echo "The Time Is Now 
+
+  Clone-My-Repository:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Clone repo
+      uses: actions/checkout@v4
+
+    - name: List all the file
+		  run: ls -larh
