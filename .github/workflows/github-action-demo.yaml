@@ -1,17 +1,17 @@
 name: slam dunk deployment
 on: [push]
 jobs:
- slam-dunk:
-   runs-on: ubuntu-latest
+  slam-dunk:
+   runs-on: self-hosted
    steps:
      - name: Say my code
        run: echo "The Time Is Now 
 
   Clone-My-Repository:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
-    - name: Clone repo
-      uses: actions/checkout@v4
+      - name: Clone repo
+        uses: actions/checkout@v4
 
-    - name: List all the file
-		  run: ls -larh
+      - name: List all the file
+		    run: ls -larh
